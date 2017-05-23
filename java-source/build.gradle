@@ -9,6 +9,7 @@ repositories {
     flatDir {
         dirs '../lib/dependencies'
     }
+    mavenCentral()
 }
 
 sourceSets {
@@ -52,8 +53,7 @@ dependencies {
 
     testCompile group: 'junit', name: 'junit', version: '4.12'
     testCompile "net.corda:test-utils:$corda_version"
-
-
+    compile "org.jetbrains.kotlin:kotlin-stdlib-js:$kotlin_version"
 
     // CorDapp dependencies
     // Specify your cordapp's dependencies below, including dependent cordapps

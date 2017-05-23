@@ -24,15 +24,18 @@ sourceSets {
 }
 
 dependencies {
-    compile "org.jetbrains.kotlin:kotlin-stdlib-jre8:$kotlin_version"
+//    compile "org.jetbrains.kotlin:kotlin-stdlib-jre8:$kotlin_version"
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     testCompile "org.jetbrains.kotlin:kotlin-test:$kotlin_version"
     testCompile "junit:junit:$junit_version"
 
     // Corda integration dependencies
     compile "net.corda:core:$corda_version"
+   // compile "net.corda:nodeapi:$corda_version"
     compile "net.corda:finance:$corda_version"
     compile "net.corda:jackson:$corda_version"
     compile "net.corda:node:$corda_version"
+    compile "net.corda:node-api:$corda_version"
     compile "net.corda:rpc:$corda_version"
     compile "net.corda:webserver:$corda_version"
     runtime "net.corda:corda:$corda_version"
@@ -51,6 +54,7 @@ dependencies {
 
     testCompile group: 'junit', name: 'junit', version: '4.12'
     testCompile "net.corda:test-utils:$corda_version"
+    //compile "org.jetbrains.kotlin:kotlin-stdlib-js:$kotlin_version"
     // CorDapp dependencies
     // Specify your cordapp's dependencies below, including dependent cordapps
 }
@@ -130,3 +134,5 @@ task runTemplateClientRPC(type: JavaExec) {
     main = 'com.template.client.TemplateClientRPCKt'
     args 'localhost:10006'
 }
+
+

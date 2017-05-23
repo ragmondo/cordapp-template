@@ -27,4 +27,3 @@ buildscript {
         classpath "net.corda.plugins:cordformation:$corda_gradle_plugins_version"
     }
 }
-

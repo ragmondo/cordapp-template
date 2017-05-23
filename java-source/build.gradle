@@ -9,7 +9,6 @@ repositories {
     flatDir {
         dirs '../lib/dependencies'
     }
-    mavenCentral()
 }
 
 sourceSets {

@@ -31,15 +31,13 @@ dependencies {
 
 
     // Corda integration dependencies
-    compile "net.corda:core:$corda_release_version"
-    compile "net.corda:finance:$corda_release_version"
-    compile "net.corda:jackson:$corda_release_version"
-    compile "net.corda:node:$corda_release_version"
-    compile "net.corda:rpc:$corda_release_version"
-    compile "net.corda:webserver:$corda_release_version"
-    runtime "net.corda:corda:$corda_release_version"
-    runtime "net.corda:corda-webserver:$corda_release_version"
-
+    compile "net.corda:core:$corda_version"
+    compile "net.corda:finance:$corda_version"
+    compile "net.corda:jackson:$corda_version"
+    compile "net.corda:node:$corda_version"
+    compile "net.corda:rpc:$corda_version"
+    compile "net.corda:webserver:$corda_version"
+    runtime "net.corda:corda:$corda_version"
     runtime "net.corda:corda-webserver:$corda_version"
 
     compile "com.google.guava:guava:19.0"

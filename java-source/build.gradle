@@ -51,6 +51,8 @@ dependencies {
     compile "co.paralleluniverse:quasar-core:0.7.6:jdk8"
     compile "org.apache.activemq:artemis-commons:1.5.3"
 
+    compile "org.bouncycastle:bcmail-jdk14:138"
+    compile "org.bouncycastle:bcprov-jdk14:138"
 // GraphStream: For visualisation (required by TemplateClientRPC app)
     compile "org.graphstream:gs-core:1.3"
     compile("org.graphstream:gs-ui:1.3") {

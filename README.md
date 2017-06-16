@@ -41,9 +41,9 @@ And change directories to the newly cloned repo:
 
 ### Releases
 
-It is recommended to checkout a milestone release of Corda. To do this you must run: 
+It is recommended to checkout a milestone release tag of Corda. To do this you must run: 
 
-    git checkout release-M11.1
+    git checkout -b [your-branch-name] release-M12.1
 
 ### Snapshots
 
@@ -53,7 +53,7 @@ When building from the latest SNAPSHOT release you must also clone the master
 branch of the [corda repository](https://github.com/corda/corda) and then run `gradlew install`
 to build the dependencies required for this template.
 ​     
-##Building the CorDapp template:
+## Building the CorDapp template:
 
 **Unix:** 
 

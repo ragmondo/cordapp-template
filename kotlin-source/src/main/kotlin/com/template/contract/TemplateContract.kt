@@ -17,3 +17,9 @@ open class TemplateContract : Contract {
     /** A reference to the underlying legal contract template and associated parameters. */
     override val legalContractReference: SecureHash = SecureHash.sha256("Prose contract.")
 }
+
+
+open class TradeMatchingContract : Contract {
+    override fun verify(tx: TransactionForContract) {}
+    override val legalContractReference: SecureHash = SecureHash.sha256("Prose contract.")
+}
